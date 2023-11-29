@@ -1,0 +1,36 @@
+version: '3.7'
+
+services:
+  frr:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: bird_xbgp
+    networks:
+      bgpnet:
+        ipv4_address: 192.168.0.2
+    privileged: true
+    tty: true
+
+  exabgp:
+    image: pierky/exabgp
+    container_name: exabgp_bird
+    volumes:
+      - ./exa:/etc/exabgp
+    networks:
+      bgpnet:
+        ipv4_address: 192.168.0.3
+    environment:
+      - EXABGP_LOG_DESTINATION=/etc/exabgp/exabgp.log
+    cap_add:
+      - NET_ADMIN
+    sysctls:
+      - net.ipv4.conf.all.forwarding=1
+    tty: true
+
+networks:
+  bgpnet:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.168.0.0/24
