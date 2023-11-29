@@ -59,7 +59,7 @@ RUN make install
 RUN cp /opt/xbgp_plugins/monitoring/0_monitoring.meta /etc/bird/plugins/manifest.conf
 RUN cp /opt/xbgp_plugins/monitoring/*.plugin /etc/bird/plugins
 RUN cp /opt/xbgp_plugins/monitoring/*.o /etc/bird/plugins
-
+COPY ./xproto /usr/bin/xproto
 RUN /usr/bin/xproto bird start
 
 WORKDIR /root
