@@ -10,14 +10,13 @@
   - This will build the Docker image as defined in your Dockerfile.
 
 - **Plugin Files Location:**
-  - The plugin files will be located at `/etc/bird/plugins` inside the container after running it.
+  - The plugin files will be located at `/etc/bird/plugins` in container after running it.
 
 - **Starting and Stopping BIRD:**
   - To start or stop the BIRD service inside the Docker container, use:
     ```
     /usr/bin/xproto bird [start|stop]
     ```
-  - Replace `[start|stop]` with either `start` to begin the service or `stop` to end it.
 
 
 ### xBGP Compliant BIRD
