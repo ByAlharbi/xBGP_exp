@@ -54,13 +54,16 @@ RUN autoreconf -i && \
   XBGP=/opt/xbgp_plugins
 RUN make
 RUN make install
+COPY ./bird/bird.conf /etc/bird/bird.conf
 
 # copying the plugin example to bird
 RUN cp /opt/xbgp_plugins/monitoring/0_monitoring.meta /etc/bird/plugins/manifest.conf
 RUN cp /opt/xbgp_plugins/monitoring/*.plugin /etc/bird/plugins
 RUN cp /opt/xbgp_plugins/monitoring/*.o /etc/bird/plugins
 COPY ./xproto /usr/bin/xproto
-RUN /usr/bin/xproto bird start
+
+COPY ./start-bird.sh /start-bird.sh
+RUN chmod +x /start-bird.sh
 
 WORKDIR /root
-CMD /bin/bash
+CMD ["/start-bird.sh"]
