@@ -1,5 +1,25 @@
 # xBGP_exp
 
+
+
+- **Build the Docker Image:**
+  - Use Docker Compose to build the image by running the following command in your terminal:
+    ```
+    docker compose build && docker compose build
+    ```
+  - This will build the Docker image as defined in your Dockerfile.
+
+- **Plugin Files Location:**
+  - The plugin files will be located at `/etc/bird/plugins` inside the container after running it.
+
+- **Starting and Stopping BIRD:**
+  - To start or stop the BIRD service inside the Docker container, use:
+    ```
+    /usr/bin/xproto bird [start|stop]
+    ```
+  - Replace `[start|stop]` with either `start` to begin the service or `stop` to end it.
+
+
 ### xBGP Compliant BIRD
 - [xBGP compliant BIRD on GitHub](https://github.com/pluginized-protocols/xbgp_bird/tree/xbgp_compliant)
 
