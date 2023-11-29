@@ -11,8 +11,8 @@
 
 ### xBGP Documentation
 #### xBGP Plugin Examples
-- [xBGP Hello Plugin](https://pluginized-protocols.org/xbgp/2020/11/29/xbgp-hello.html)
-- [Plugin Documentation](https://github.com/pluginized-protocols/xbgp_plugins/blob/master/docs/source/plugin.rst)
+- [xBGP Plugin example](https://pluginized-protocols.org/xbgp/2020/11/29/xbgp-hello.html)
+- [xBGP Plugin - another example](https://github.com/pluginized-protocols/xbgp_plugins/blob/master/docs/source/plugin.rst)
 
 #### Additional Documentation
 - [xBGP Plugins Documentation](https://github.com/pluginized-protocols/xbgp_plugins/tree/master/docs/source)
