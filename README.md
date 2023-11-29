@@ -1,17 +1,19 @@
 # xBGP_exp
 
-### xBGP compliant BIRD:
-https://github.com/pluginized-protocols/xbgp_bird/tree/xbgp_compliant 
-### xBGP API:
-https://github.com/pluginized-protocols/libxbgp 
-### xBGP plugins examples: 
-https://github.com/pluginized-protocols/xbgp_plugins 
+### xBGP Compliant BIRD
+- [xBGP compliant BIRD on GitHub](https://github.com/pluginized-protocols/xbgp_bird/tree/xbgp_compliant)
 
-### xBGP documentation: 
-- The xBGP plugins examples:
-      - https://pluginized-protocols.org/xbgp/2020/11/29/xbgp-hello.html
-      - https://github.com/pluginized-protocols/xbgp_plugins/blob/master/docs/source/plugin.rst
+### xBGP API
+- [xBGP API on GitHub](https://github.com/pluginized-protocols/libxbgp)
 
-Other documentation:
-      - https://github.com/pluginized-protocols/xbgp_plugins/tree/master/docs/source
-      - https://github.com/pluginized-protocols/libxbgp/tree/master/docs/source
+### xBGP Plugins Examples
+- [xBGP plugins examples on GitHub](https://github.com/pluginized-protocols/xbgp_plugins)
+
+### xBGP Documentation
+#### xBGP Plugin Examples
+- [xBGP Hello Plugin](https://pluginized-protocols.org/xbgp/2020/11/29/xbgp-hello.html)
+- [Plugin Documentation](https://github.com/pluginized-protocols/xbgp_plugins/blob/master/docs/source/plugin.rst)
+
+#### Additional Documentation
+- [xBGP Plugins Documentation](https://github.com/pluginized-protocols/xbgp_plugins/tree/master/docs/source)
+- [xBGP API Documentation](https://github.com/pluginized-protocols/libxbgp/tree/master/docs/source)
