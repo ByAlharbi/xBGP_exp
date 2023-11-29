@@ -3,20 +3,18 @@
 
 
 - **Build the Docker Image:**
-  - Use Docker Compose to build the image by running the following command in your terminal:
     ```
     docker compose build && docker compose build
     ```
-  - This will build the Docker image as defined in your Dockerfile.
-
 - **Plugin Files Location:**
-  - The plugin files will be located at `/etc/bird/plugins` in container after running it.
+  - The plugin files will be located at `/etc/bird/plugins` in the bird container.
 
-- **Starting and Stopping BIRD:**
-  - To start or stop the BIRD service inside the Docker container, use:
+- **Starting and Stopping BIRD:** 
+  - To start or stop the BIRD service, use:
     ```
     /usr/bin/xproto bird [start|stop]
     ```
+**Note**: BIRD is already running in the container, so there is no need to run it manually.
 
 
 ### xBGP Compliant BIRD
