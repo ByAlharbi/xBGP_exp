@@ -4,7 +4,7 @@
 
 - **Build the Docker Image:**
     ```
-    docker compose build && docker compose build
+    docker compose build && docker compose up
     ```
 - **Plugin Files Location:**
   - The plugin files will be located at `/etc/bird/plugins` in the bird container.
